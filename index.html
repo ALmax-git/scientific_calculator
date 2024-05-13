@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+
+<head> 
+  <title>Scientific calculator</title>
+
+  <style>
+  * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #ecf0f3; 
+}
+
+.container {
+  height: 100vh;
+  border: 2px solid black;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width:350px;  
+  background-color: #ecf0f3;
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 30px; 
+}
+
+input { 
+  height: 70px; 
+  width:300px;
+  background-color: #ecf0f3;  
+  border: 2px solid black;
+  border-radius: 30px;
+  color: rgb(70, 70, 70);
+  font-size: 50px;
+  text-align: end;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+
+button {
+  height: 50px;
+  width: 50px;
+  background-color: #ecf0f3;  
+  border-radius: 50%;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.tbtn {
+  height: 30px;
+  width: 48px;
+  background-color: #ecf0f3; 
+  border: none;
+  margin: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.equal {
+  width: 115px;
+  border-radius: 40px;
+  background-color: #ecf0f3; 
+}
+  </style>
+
+</head>
+
+<body>
+  <h1> Group 16</h1>
+  <div class="container">
+    <div class="calculator">
+      <input type="text" placeholder="0" id="output-screen">
+      <table>
+        <tr>
+          <td> <button class="tbtn"><sup>dec</sup></button></td>
+          <td> <button class="tbtn"><sup>bin</sup></button></td>
+          <td> <button class="tbtn"><sup>oct</sup></button></td>
+          <td> <button class="tbtn"><sup>hex</sup></button></td>
+          <td> <button class="tbtn"><sup>off</sup></button></td>
+        </tr>
+        
+        <tr>
+          <td> <button class="tbtn"><sup>sin</sup></button></td>
+          <td> <button class="tbtn"><sup>cos</sup></button></td>
+          <td> <button class="tbtn"><sup>tan</sup></button></td>
+          <td> <button class="tbtn">π</button></td>
+          <td> <button class="tbtn">n!</button></td>
+        </tr>
+        
+        <tr>
+          <td> <button class="tbtn"><sup>y</sup>√x</button></td>
+          <td> <button class="tbtn"><sup>3</sup>√x</button></td>
+          <td> <button class="tbtn">√x</button></td>
+          <td> <button class="tbtn">In</button></td>
+          <td> <button class="tbtn">Log</button></td>
+        </tr>
+        
+        <tr>
+          <td> <button class="tbtn">(</button></td>
+          <td> <button class="tbtn">)</button></td>
+          <td> <button class="tbtn">X<sup>2</sup></button></td>
+          <td> <button class="tbtn">X<sup>3</sup></button></td>
+          <td> <button class="tbtn">X<sup>n</sup></button></td>
+        </tr>
+      </table>
+      <br>
+      <button>CL</button>
+      <button>DEL</button>
+      <button>%</button>
+      <button>/</button>
+      <br>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>*</button>
+      <br>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>-</button>
+      <br>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>+</button>
+      <br>
+      <button>.</button>
+      <button>0</button>
+      <button class="equal">=</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
